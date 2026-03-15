@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vaniicodes | Premium Web & App Development</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <nav class="navbar">
+        <div class="logo">
+            <img src="logo.webp" alt="vaniicodes logo">
+        </div>
+        
+        <div class="nav-links">
+            <a href="#work">Portfolio</a>
+            <a href="#contact" class="nav-cta">Let's Talk</a>
+        </div>
+
+        <div class="mobile-menu-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="mobile-overlay" id="mobileOverlay">
+        <div class="close-menu" onclick="toggleMenu()">&times;</div>
+        <a href="#work" onclick="toggleMenu()">Portfolio</a>
+        <a href="#contact" onclick="toggleMenu()">Contact Us</a>
+    </div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="badge">Development Studio</div>
+            <h1>Digital <span>Products</span> Built to Scale.</h1>
+            <p>We specialize in high-performance web applications and mobile-first experiences for brands that demand excellence.</p>
+            <div class="hero-btns">
+                <a href="#work" class="btn-primary">View Portfolio</a>
+                <a href="#contact" class="btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <div class="ticker-item">Web Development</div>
+            <div class="ticker-item">App Development</div>
+            <div class="ticker-item">UI/UX Design</div>
+            <div class="ticker-item">Custom Coding</div>
+            <div class="ticker-item">Web Development</div>
+            <div class="ticker-item">App Development</div>
+            <div class="ticker-item">UI/UX Design</div>
+            <div class="ticker-item">Custom Coding</div>
+        </div>
+    </div>
+    <section class="services" id="services">
+    <div class="service-card">
+        <i class="fas fa-code"></i>
+        <h3>Web Development</h3>
+        <p>Custom-coded, high-performance websites built with modern frameworks.</p>
+    </div>
+    <div class="service-card">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>App Development</h3>
+        <p>Native-feel mobile experiences for iOS and Android platforms.</p>
+    </div>
+    <div class="service-card">
+        <i class="fas fa-paint-brush"></i>
+        <h3>UI/UX Design</h3>
+        <p>Modern, user-centric interfaces designed for maximum conversion.</p>
+    </div>
+</section>
+<section class="portfolio" id="work">
+    <div class="portfolio-container">
+        <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80" alt="Web Dev">
+            <div class="project-overlay">
+                <h3>Enterprise Web App</h3>
+                <p>Web Development</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80" alt="App Dev">
+            <div class="project-overlay">
+                <h3>Mobile Solutions</h3>
+                <p>App Development</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Dashboard">
+            <div class="project-overlay">
+                <h3>Custom Software</h3>
+                <p>Web Dev</p>
+            </div>
+        </div>
+    </div>
+</section>
+   
+            
+
+    <footer class="contact-footer" id="contact">
+        <h2>Ready to start your <span>Project?</span></h2>
+        <div class="footer-actions">
+            <a href="mailto:vanii.codes@gmail.com" class="contact-btn">
+                <i class="fas fa-envelope"></i> vanii.codes@gmail.com
+            </a>
+            <a href="https://www.instagram.com/vaniicodes" target="_blank" class="contact-btn">
+                <i class="fab fa-instagram"></i> @vaniicodes
+            </a>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2026 vaniicodes. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileOverlay');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
