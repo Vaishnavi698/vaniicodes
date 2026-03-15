@@ -1,5 +1,17 @@
 /* --- UNIVERSAL RESET --- */
 * {
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* This keeps padding INSIDE the boxes so they don't grow too wide */
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* This kills the annoying side-scrolling on mobile */
+}
     margin: 0;
     padding: 0;
     box-sizing: border-box;
